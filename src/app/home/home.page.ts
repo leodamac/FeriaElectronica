@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
-import { IonicModule } from '@ionic/angular';
-import { RouterLink } from '@angular/router';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { LectorQRPage } from './lector-qr.page';
 
-@Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
-  imports: [IonicModule, RouterLink],
-})
-export class HomePage {
-  constructor() {
-  }
-}
+describe('LectorQRPage', () => {
+  let component: LectorQRPage;
+  let fixture: ComponentFixture<LectorQRPage>;
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(LectorQRPage);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
