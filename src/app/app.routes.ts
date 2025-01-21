@@ -2,16 +2,16 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
+    path: 'lector-qr',
+    loadComponent: () => import('./lector-qr/lector-qr.page').then( m => m.LectorQRPage)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'lector-qr',
     pathMatch: 'full',
   },
   {
     path: '**',
-    redirectTo: 'home'
+    redirectTo: 'lector-qr'
   }
 ];
