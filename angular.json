@@ -18,9 +18,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "browser",
+            "outputPath": "www",
             "index": "src/index.html",
-            "polyfills": [
+            "baseHref": "/",
+			"polyfills": [
               "src/polyfills.ts"
             ],
             "tsConfig": "tsconfig.app.json",
