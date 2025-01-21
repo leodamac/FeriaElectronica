@@ -11,11 +11,6 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'lector-qr',
-    loadComponent: () => import('./lector-qr/lector-qr.page').then( m => m.LectorQRPage)
-  },
-  // Añade una ruta wildcard al final para manejar rutas no encontradas
-  {
     path: '**',
     redirectTo: 'home'
   }
