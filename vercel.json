@@ -2,9 +2,10 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node",
+      "use": "@vercel/static-build",
       "config": {
-        "buildCommand": "ionic build --prod"
+        "buildCommand": "npm install && ionic build --prod",
+        "outputDirectory": "www"
       }
     }
   ],
