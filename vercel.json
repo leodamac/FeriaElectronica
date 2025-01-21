@@ -4,5 +4,11 @@
       "src": "browser/index.html",
       "use": "@vercel/static"
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/browser/index.html"
+    }
   ]
 }
