@@ -15,15 +15,15 @@
   <input #fileinput type="file" accept="image/*;capture=camera" hidden (change)="handleFile($event)" />
   <canvas #canvas></canvas>
   <ion-button expand="full" (click)="captureImage()">
-    <ion-icon slot="start" name="camera"></ion-icon>
+    <ion-icon slot="start" name="camera-outline"></ion-icon>
     Capture Image
   </ion-button>
   <ion-button expand="full" (click)="startScan()">
-    <ion-icon slot="start" name="qr-scanner"></ion-icon>
+    <ion-icon slot="start" name="qr-code-outline"></ion-icon>
     Start scan
   </ion-button>
   <ion-button expand="full" (click)="reset()" color="warning" *ngIf="scanResult">
-    <ion-icon slot="start" name="refresh"></ion-icon>
+    <ion-icon slot="start" name="refresh-circle-outline"></ion-icon>
     Reset
   </ion-button>
   <video #video [hidden]="!scanActive" width="100%"></video>

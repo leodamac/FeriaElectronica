@@ -31,7 +31,7 @@
     "@ericblade/quagga2": "^1.8.4",
     "@ionic/angular": "^8.0.0",
     "@ionic/pwa-elements": "^3.3.0",
-    "ionicons": "^7.0.0",
+    "ionicons": "^7.4.0",
     "jsqr": "^1.4.0",
     "ngx-barcode-scanner": "^14.0.1",
     "qr-scanner": "^1.4.2",
