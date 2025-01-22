@@ -10,7 +10,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
     declarations: [AppComponent],
-    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicModule.forRoot({})],
     providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
         { provide: LocationStrategy, useClass: HashLocationStrategy }],
     bootstrap: [AppComponent],

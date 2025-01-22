@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 
+
 import jsQR from "jsqr";
 import * as QRCode from 'qrcode';
 
